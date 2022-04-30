@@ -1,14 +1,14 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from "src/components/layout"
+import Seo from "src/components/seo"
 
-const IndexPage = () => (
+const Food = () => (
   <Layout>
-    <Seo title="Home" />
-    <h1>ANIMA</h1>
-    <p>A personal website with research on health and longevity.</p>
+    <Seo title="Food" />
+    <h1>Food</h1>
+    <p>Welcome to your new Gatsby site.</p>
     <p>
       <Link to="/page-2/">Go to page 2</Link> <br />
       <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
@@ -18,4 +18,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default Food

@@ -4,6 +4,38 @@ module.exports = {
     description: `A personal website focused on providing accessible information about health and longevity.`,
     author: `@kurt-hu`,
     siteUrl: `https://kurt-hu.github.io/anima`,
+    menuLinks:[
+      {
+        name:'Home',
+        link:'/'
+      },
+      {
+        name:'Food',
+        link:'/food',
+        sublinks: [
+          {
+            name:'dietary-restriction',
+            link:'/dietary-restriction'
+          },
+        ]
+      },
+      {
+        name:'Supplementation',
+        link:'/supplementation'
+      },
+      {
+        name:'Exercise',
+        link:'/exercise'
+      },
+      {
+        name:'Brain',
+        link:'/brain'
+      },
+      {
+        name:'Stages of Life',
+        link:'/stages-of-life'
+      },
+    ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -39,6 +71,7 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    'gatsby-plugin-root-import',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
